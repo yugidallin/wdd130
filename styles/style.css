@@ -1,5 +1,18 @@
+header {
+    background-color: #eee;
+    font-size: x-large;
+}
+
 main {
     max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid skyblue;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
 }
 
 aside {
@@ -16,13 +29,7 @@ aside img {
     height: auto;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid skyblue;
-    padding: 2px;
-    box-shadow: 0 0 10px gray;
-}
+
 
 p {
     padding: 0;
