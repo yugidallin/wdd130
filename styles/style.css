@@ -19,6 +19,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid skyblue;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
 }
 
 p {
