@@ -1,40 +1,40 @@
 header {
-    background-color: #3173ad62;
-    font-size: x-large;
+  background-color: #3173ad62;
+  font-size: x-large;
 }
 
 main {
-    max-width: 840px;
+  max-width: 840px;
 }
 
 main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid skyblue;
-    padding: 2px;
-    box-shadow: 0 0 10px gray;
+  width: 150px;
+  height: auto;
+  border: 1px solid skyblue;
+  padding: 2px;
+  box-shadow: 0 0 10px gray;
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid(0,0,0,0.2); /* 1 */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 p {
-    padding: 0;
+  padding: 0;
 }
 
 footer {
-    margin-top: 1rem;
-    border-top: 1px solid #000;
-    text-align: center;
+  margin-top: 1rem;
+  border-top: 1px solid #000;
+  text-align: center;
 }
