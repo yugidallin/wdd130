@@ -6,10 +6,10 @@
     --accent2-color:#004040;
     --heading-font: 'Josefin Sans', serif;
     --paragraph-font: 'Dosis', serif;
-    --navigation-background-color:#004040 ;
-    --navigation-link-color:#fff ;
-    --navigation-hover-link-color:#fff ;
-    --navigation-hover-background-color:#058787 ;
+    --nav-background-color:#004040 ;
+    --nav-link-color:#fff ;
+    --nav-hover-link-color:#fff ;
+    --nav-hover-background-color:#058787 ;
     
 }
 
@@ -45,16 +45,16 @@ nav{
 }
 nav a{
     display: block;
-    color: var(--navigation-link-color);
+    color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
 }
 nav a:link, nav a:visited{
-    color: var(--navigation-link-color);
+    color: var(--nav-link-color);
 }
 
 nav a:hover{
-    color: var(--navigation-hover-link-color);
-    background-color: var(--navigation-hover-background-color);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
