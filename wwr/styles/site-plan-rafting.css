@@ -39,7 +39,7 @@ p{
 }
 
 nav{
-    background-color: var(--accent2-color);
+    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
 }
