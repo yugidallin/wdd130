@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
-    --primary-color:#48D7E4;
+    --primary-color:#48d7e4;
     --secondary-color:#114265;
     --accent1-color:#00007A;
     --accent2-color:#004040;
@@ -64,22 +64,27 @@ nav a:hover{
     height: auto;
 }
 .hero h1 {
+    padding: 3px;
     position: absolute;
+    width: 100%;
+    height: auto;
     top: 10px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: #004040;
 }
 
 .hero article {
-    padding: 5px;
+    padding: 3px;
     position: absolute;
     top:60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 700px; 
     height: 150px; 
-    background-color: rgb(17, 66, 101, .50);
+    background-color: rgba(44, 133, 141, 0.5);
 }
 
 .hero article p {
