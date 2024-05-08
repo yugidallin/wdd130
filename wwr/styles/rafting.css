@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --primary-color:#48D7E4;
+    --secondary-color:#114265;
+    --accent1-color:#00007A;
+    --accent2-color:#004040;
+    --heading-font: 'Josefin Sans', serif;
+    --paragraph-font: 'Dosis', serif;
+    --nav-background-color:#004040 ;
+    --nav-link-color:#fff ;
+    --nav-hover-link-color:#fff ;
+    --nav-hover-background-color:#058787 ;
+    
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+p{
+    padding: 3px;
+}
+
+.sociallinks {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    background-color: var(--secondary-color);
+}
+
+.hero img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero h1{
+    position: absolute;
+}
+
+.hero article{
+    position: absolute;
+}
