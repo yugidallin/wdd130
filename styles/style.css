@@ -14,7 +14,7 @@ header, footer, .grid {
   margin: 0 auto;
 }
 
-.grid {
+div.grid {
   display: grid;
   align-items: center;
   grid-template-columns: 22rem auto;
