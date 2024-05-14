@@ -9,32 +9,57 @@ header {
   font-size: x-large;
 }
 
-main {
+header, .grid, footer {
   max-width: 840px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+
+main{
+  grid-column: 2;
+}
+
+main h1 {
+  padding: .5rem;
+  border-bottom: 2px solid #47b0f6a2;
+  grid-column: span 2;
 }
 
 main img {
   float: right;
   width: 150px;
   height: auto;
+  margin-top: 1rem;
   border: 1px solid skyblue;
   padding: 2px;
   box-shadow: 0 0 10px gray;
 }
 
 aside {
+  width: 20rem;
   position: relative;
-  width: 27rem;
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
   background-color: #eee;
   color: #333;
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
 }
 
 aside img {
-  width: 400px;
+  width: 285px;
   height: auto;
+  display: block;
 }
 
 aside h2 {
@@ -45,12 +70,20 @@ aside h2 {
     -1px  1px 0 rgb(71, 71, 71),
     1px  1px 0 rgb(71, 71, 71);
   position: absolute;
-  top: 100px;
-  left: 145px;
   color: whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+aside p{
+  width: 100%;
+  text-align:justify;
 }
 
 p {
+  margin-top: 1rem;
   padding: 0;
 }
 
@@ -60,12 +93,29 @@ footer {
   text-align: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li a {
+  text-decoration: none;
+}
+
 /* Class Selectors */
 
 .box {
   margin: 1rem;
   border: 1px solid black;
   padding: 1rem;
-  background-color: bisque;
+  background-color: rgb(218, 218, 218);
   color: #000;
 }
