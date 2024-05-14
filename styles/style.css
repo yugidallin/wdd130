@@ -12,12 +12,12 @@ header {
 header, footer, .grid {
   max-width: 840px;
   margin: 0 auto;
-  
 }
 
 .grid {
   display: grid;
   align-items: center;
+  grid-template-columns: 22rem auto;
 }
 
 main{
@@ -90,7 +90,12 @@ p {
 
 footer {
   margin-top: 1rem;
+  width: 100%;
   border-top: 1px solid #000;
+  grid-column: 1 / -1;
+}
+
+footer p {
   text-align: center;
 }
 
