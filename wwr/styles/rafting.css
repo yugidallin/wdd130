@@ -180,11 +180,14 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 1rem;
+    padding: .05rem;
 }
 
 footer p {
     color: var(--nav-hover-link-color);
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
 }
 
 footer nav {
