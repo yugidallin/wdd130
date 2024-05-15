@@ -130,7 +130,9 @@ nav a:hover {
 
 .image-container {
     display: flex;
+    flex-direction: column;
     gap: 0.25rem;
+    overflow-x: auto;
 }
 
 figure {
@@ -185,6 +187,7 @@ footer nav img {
 
 @media (min-width: 768px) {
     .image-container {
+        flex-direction: row;
         gap: 1rem;
     }
 
