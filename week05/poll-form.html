@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Dallin Job Cabaliza | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                <label>Full Name: <input type ="text" id="fullname"></label><br>
+                </div>
+                <div class="form-item column2">
+                <label>Email Address: <input type="email" id="useremail"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                <label for="browser">What is your favorite browser?</label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="opera">Opera</option>
+                </select><br>
+                </div>
+                <div class="form-item column1">
+                <label>Do you have a househol pet?<input type="checkbox" id="pet"></label><br>
+                </div>
+                <label for="feedback">List of places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Calbayog, Makati"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 | HTML Form - User Poll Activity | Dallin Job Cabaliza</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+table {
+    border: 2px solid rgb(140 140 140);
+}
+
+thead th {
+    background-color: #000;
+    color: #fff;
+    font: 
+        16px "Open Sans",
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+th, td {
+    border: 1px solid rgb(140 140 140);
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: 700;
+    font-style: italic;
+}
