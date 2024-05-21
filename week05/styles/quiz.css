@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --primary-font: 'Roboto', serif;
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--primary-font);
     font-size: 1em;
     color: #333;
     background: #fff;
@@ -17,10 +18,6 @@ header, form, footer {
     margin: 0 auto;
     width: 650px;
 }
-
-/* header {
-    
-} */
 
 h1 {
     margin: 1rem;
@@ -41,6 +38,7 @@ fieldset {
     display: grid;
     grid-gap: .25rem;
     margin: 1rem;
+    border-radius: .5rem;
     border: 1px solid rgba(0, 0, 0, .2);
     padding: 1rem;
 }
@@ -52,7 +50,7 @@ legend {
 }
 
 label {
-    text-align: right;
+    text-align: left;
     padding-right: 1rem;
 }
 
@@ -61,21 +59,17 @@ input, select, textarea {
     font-size: 1rem;
 }
 
-input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    vertical-align: bottom;
-}
-
 button {
     margin: 1rem;
+    background-color: navy;
+    color: #eee;
     border: .5px solid;
     border-radius: .5rem;
     padding: .75rem;
 }
 
 button:hover {
-    background-color: #757474be;
+    background-color: rgba(0, 0, 253, 0.792);
 }
 
 footer {
@@ -84,18 +78,4 @@ footer {
     font-size: 1em;
     color: rgb(72, 72, 72);
     border-top: 1px solid;
-}
-
-.form-item {
-    display: grid;
-    align-items: center;
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: .5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 1fr 2fr;
 }
