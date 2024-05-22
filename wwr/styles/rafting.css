@@ -32,6 +32,8 @@ p {
     padding: 3px;
 }
 
+
+
 header {
     display: grid;
     grid-template-columns: 1fr;
@@ -203,6 +205,13 @@ footer nav img {
 
 /* Contact Us specific*/
 
+.contact-us {
+    text-align: center;
+}
+.contact-us h1 {
+    padding-bottom: 40px;
+}
+
 .contactus {
     display: flex;
     justify-content: center;
@@ -240,8 +249,11 @@ iframe {
 }
 
 .address {
-    margin-top: 20px;
+    margin-top: 100px;
     width: 100%;
+    text-align: left;
+    color: var(--accent1-color);
+    font-size: x-large;
 }
 
 form {
@@ -287,13 +299,14 @@ fieldset.radio {
 }
 
 fieldset.radio label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-top: 5px;
 }
 
 fieldset.radio input[type="radio"] {
-    margin-right: 10px;
+    margin-right: 5px;
+    display: inline-flex;
 }
 
 legend {
@@ -317,6 +330,7 @@ input[type="checkbox"] {
     text-align: center;
     width: 80%;
     margin: 20px auto;
+    padding-top: 40px;
 }
 
 .employees figure {
@@ -343,7 +357,6 @@ button:hover {
 }
 
 
-
 /* Media Queries */
 @media (min-width: 600px) {
     header {
@@ -357,11 +370,7 @@ button:hover {
     }
 
     .article-container{
-        /* top: auto; */
         bottom: 0;
-        /* transform: translate(-50%,0); */
-        /* width: 100%; */
-        /* height: 90%; */
     }
 
     .history {
@@ -410,5 +419,34 @@ button:hover {
     footer {
         grid-template-columns: 1fr 300px;
         text-align: left;
+    }
+}
+
+/* Contact Us */
+@media screen and (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forms {
+        width: 100%;
+        order: 1;
+    }
+
+    .map-address {
+        width: 100%;
+        order: 3;
+        margin-top: 20px;
+    }
+
+    .employees {
+        width: 100%;
+    }
+
+    .employees figure {
+        display: block;
+        margin: 20px auto;
     }
 }
