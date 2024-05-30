@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -20,19 +21,25 @@
     width: 100%;
     float: left;
     padding: 15px;
-  }
+}
 
 html, body {
     height: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
 body, footer, main, .grid {
     max-width: 100%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 50px 50px 20px;
 }
 
 body {
+    background-image: url("../images/white-water-rafting-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     font-family: var(--paragraph-font);
@@ -59,8 +66,8 @@ header {
     grid-template-rows: auto auto;
     align-items: center;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--accent2-color);
     text-align: center;
+    background: rgba(255, 255, 255, 0.95);
 }
 
 header img {
@@ -75,6 +82,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    /* transition: background-color 0.3s ease; */
 }
 
 nav a {
@@ -82,6 +90,8 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
+    transition: background-color 0.3s ease;
+    
 }
 
 nav a:hover {
@@ -91,12 +101,13 @@ nav a:hover {
 
 main {
     flex-grow: 1;
+    background: rgba(255, 255, 255, 0.95);
 }
 
 footer {
     background-color: #004040;
     text-align: center;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 footer .footer-content {
@@ -113,13 +124,13 @@ footer a {
     color: var(--nav-hover-link-color);
 }
 
-footer nav.sociallinks {
+footer nav.social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-footer nav.sociallinks img {
+footer nav.social-links img {
     height: 50px;
     width: auto;
 }
@@ -204,7 +215,7 @@ footer nav.sociallinks img {
     gap: 1rem;
 }
 
-.images section {
+.images{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -381,6 +392,7 @@ button {
     padding: .75rem;
     background-color: var(--nav-background-color);
     color: #eee;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -388,28 +400,43 @@ button:hover {
 }
 
 /* Trips Specific */
+
+.book-now {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background-color:var(--nav-background-color);
+    color: #eee;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
 .col-4, .col-s-4 {
-    flex: 100%;
+    flex: 1;
     padding: 15px;
 }
 
 .col-4 img, .col-s-4 img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease;
 }
 
 .col-4 {
     position: relative;
     overflow: hidden;
-}
-
-.col-4 img {
-    transition: transform 0.3s ease;
 }
 
 .col-4:hover img {
@@ -418,22 +445,22 @@ button:hover {
 
 .col-4 h3, .col-4 p {
     position: absolute;
-    bottom: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
-    padding: 5px; /* Adjust padding as needed */
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
     transition: bottom 0.3s ease, background-color 0.3s ease;
 }
 
 .col-4:hover h3, .col-4:hover p {
-    bottom: calc(50% + 10px); /* Adjust to move the elements upwards */
-    background-color: rgba(255, 255, 255, 0.8); /* Make background transparent */
+    bottom: calc(50% + 10px);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .col-4 p {
     display: none;
     width: 100%;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     bottom: -100%;
 }
@@ -442,6 +469,69 @@ button:hover {
     display: block;
     bottom: 0;
 }
+
+.book-this {
+    display: block;
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    padding: 10px;
+    background-color:var(--nav-background-color);
+    color: #eee;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-this:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+/* .trip-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid var(--accent2-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.trip-table th.trip-name {
+    width: 15%;
+}
+
+.trip-table th.duration {
+    width: 15%;
+}
+
+.trip-table th.price {
+    width: 15%;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trip-table tr:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.trip-table a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.trip-table a:hover {
+    text-decoration: underline;
+} */
 
 /* Media Queries */
 
@@ -475,11 +565,14 @@ button:hover {
     .hero {
         display: none;
     }
+    .book-this {
+        width: 100%;
+    }
 }
 
 /* general */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     header {
         grid-template-columns: 240px 1fr;
         grid-template-rows: auto;
@@ -533,18 +626,18 @@ button:hover {
     }
 
     /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    .col-s-1 { width: 8.33%; }
+    .col-s-2 { width: 16.66%; }
+    .col-s-3 { width: 25%; }
+    .col-s-4 { width: 33.33%; }
+    .col-s-5 { width: 41.66%; }
+    .col-s-6 { width: 50%; }
+    .col-s-7 { width: 58.33%; }
+    .col-s-8 { width: 66.66%; }
+    .col-s-9 { width: 75%; }
+    .col-s-10 { width: 83.33%; }
+    .col-s-11 { width: 91.66%; }
+    .col-s-12 { width: 100%; }
 }
   
 @media only screen and (min-width: 768px) {
@@ -560,18 +653,26 @@ button:hover {
         align-items: center;
     }
 
-    footer nav.sociallinks {
+    footer nav.social-links {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+    }
+
+    .book-now {
+        width: 400px;
+        font-size: xx-large;
     }
 
     .row {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Distribute columns evenly */
     }
+
     .col-4 {
-        flex: 1;
-        padding: 15px;
+        flex: 0 0 calc(50% - 30px); /* 30px padding between columns */
+        max-width: calc(50% - 30px);
     }
     .col-4 img {
         width: 100%;
@@ -579,18 +680,18 @@ button:hover {
     }
 
     /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -600,8 +701,19 @@ button:hover {
         align-items: center;
     }
 
-    footer nav.sociallinks {
+    footer nav.social-links {
         display: flex;
         gap: 1rem;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Distribute columns evenly */
+    }
+
+    .col-4 {
+        flex: 0 0 calc(50% - 30px); /* 30px padding between columns */
+        max-width: calc(50% - 30px);
     }
 }
