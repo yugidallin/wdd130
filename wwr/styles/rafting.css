@@ -261,6 +261,9 @@ footer nav.social-links img {
     height: auto;
 }
 
+.home-container h1 { 
+    text-align: center;
+}
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -285,14 +288,14 @@ footer nav.social-links img {
 }
 
 .newsletter-form {
-    margin: 20px 0;
-    
+    /* margin: 20px 0; */
 }
 
 .newsletter-form form {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    width: 350px;
+    height: auto;
+    margin: 20px auto 20px;
+    /* margin-bottom: 20px; */
 
 }
 
@@ -721,7 +724,8 @@ button:hover {
 
     .home {
         flex: 3;
-        margin-right: 20px;
+        margin: 0 auto;
+        /* margin-right: 20px; */
     }
 
     .newsletter-form {
@@ -729,13 +733,12 @@ button:hover {
         position: -webkit-sticky; /* For Safari */
         position: sticky;
         top: 20px;
-        margin: 0 auto;
-        padding-right: 30px;
+        /* margin: 0 auto; */
+        /* padding-right: 30px; */
     }
 
     .newsletter-form form{
-        /* width: 80%;
-        margin: 0 auto 30px; */
+        width: 80%;
     }
     .home-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
